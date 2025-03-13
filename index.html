@@ -3,38 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - POGNON Emmanuel</title>
+    <title>Portfolio | Développeur & Graphiste</title>
     <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
 </head>
 <body>
-    <div class="container">
-        <h1 id="title"></h1>
-        <div class="box">
-            <h2>À propos de moi</h2>
-            <p>Après mes nombreuses formations afin d'acquérir toutes les compétences que je désire en Développement Web et la Cybersécurité,
-            je crée des sites webs modernes ainsi que de très bonne application webs et capable de sécuriser tous les systèmes Informatiques.</p>
+
+    <header>
+        <h1>Bienvenue moi c'est POGNON Emmanuel ! <br> Je suis<span class="highlight"> Développeur Web</span> & <span class="highlight">Agent de protection <br> des systèmes informatiques.</span></h1>
+    </header>
+
+    <section class="about">
+        <h2>À propos de moi</h2>
+        <p>Après mes nombreuses formations afin d'acquérir toutes les compétences que je désire en Développement Web et la Cybersécurité,
+        je crée des sites webs modernes ainsi que de très bonne application webs et capable de sécuriser tous les systèmes Informatiques.</p>
+    </section>
+
+    <section class="skills">
+        <h2>Mes Compétences</h2>
+        <div class="skills-container">
+            <div class="skill">HTML</div>
+            <div class="skill">CSS</div>
+            <div class="skill">JavaScript</div>
+            <div class="skill">PHP</div>
+            <div class="skill">SQL</div>
+            <div class="skill">Python </div>
+            <div class="skill">CyberSécurité</div>
+            <div class="skill">React </div>
+            <div class="skill">Langage C</div>
         </div>
-        <div class="box skills">
-            <h2>Mes Compétences</h2>
-            <span>HTML</span>
-            <span>CSS</span>
-            <span>JavaScript</span>
-            <span>PHP</span>
-            <span>SQL</span>
-            <span>Python</span>
-            <span>CyberSécurité</span>
-            <span>React</span>
-            <span>Langage C</span>
-        </div>
-        <div class="box">
-            <h2>Contactez-moi</h2>
-            <div class="buttons">
-                <a href="https://wa.me/+22945489432" target="_blank"><button>WhatsApp</button></a>
-                <a href="tel:+22945489432"><button>Appel</button></a>
-                <a href="https://www.instagram.com/pognonemmanuel" target="_blank"><button>Instagram</button></a>
-            </div>
-        </div>
-    </div>
-    <script src="script.js"></script>
+    </section>
+
+    <section class="contact">
+        <h2>Contactez-moi</h2>
+        <a href="https://wa.me/98396088" class="btn whatsapp">WhatsApp</a>
+        <a href="tel:+22998396088" class="btn call">Appel</a>
+        <a href="https://www.instagram.com/pognonemmanuel" class="btn insta" target="_blank">Instagram</a>
+    </section>
+
 </body>
 </html>
