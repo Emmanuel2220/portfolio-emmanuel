@@ -17,5 +17,3 @@ new Typewriter(textAnim, {
 .pauseFor(300)
 .typeString('<strong> <br> Développeur web  & agent de protection <br> des systèmes informatiques. </strong>')
 .start()
-
-       
