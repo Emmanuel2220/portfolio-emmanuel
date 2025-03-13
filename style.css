@@ -1,88 +1,109 @@
+/* Importation de la police */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
 
 body {
-    font-family: Arial, sans-serif;
-    background: linear-gradient(60deg, #000080, #87CEEB, #000);
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
     text-align: center;
+    background: linear-gradient(120deg, rgba(27, 27, 98, 0.903), rgba(48, 109, 133, 0.855),rgba(0, 0, 0, 0.558));
     color: white;
-    margin: 0;
-    padding: 0;
 }
-.container {
+
+/* En-tête */
+header {
+    padding: 50px 20px;
+    font-size: 1.5em;
+}
+
+header h1 {
+    word-spacing: 0rem; /* Ajoute de l'espace entre les mots */
+    letter-spacing: 2px; /* Ajoute de l'espace entre les lettres */
+}
+
+/* Mise en page des sections */
+section {
+    max-width: 90%;
+    width: 600px;
+    margin: 40px auto;
     padding: 20px;
-    max-width: 1200px;
-    margin: auto;
-    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
 }
-h1 {
-    font-size: 2.5em;
-    opacity: 0;
-    animation: fadeIn 3s forwards;
-}
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
-}
-.box {
-    background: rgba(255, 255, 255, 0.2);
-    padding: 30px;
-    margin: 30px auto;
-    border-radius: 15px;
-    width: 95%;
-    max-width: 700px;
-}
-.skills span {
-    display: inline-block;
-    background: rgba(255, 255, 255, 0.3);
-    padding: 12px;
-    margin: 7px;
-    border-radius: 5px;
-    animation: float 3s infinite ease-in-out alternate;
-}
-@keyframes float {
-    from { transform: translateY(0px); }
-    to { transform: translateY(-10px); }
-}
-.buttons {
+
+/* Mise en page des compétences */
+.skills-container {
     display: flex;
-    justify-content: center;
-    gap: 15px;
     flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
 }
-.buttons a {
-    text-decoration: none;
+
+.skill {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 1.1em;
+    animation: bounce 1s infinite alternate;
 }
-.buttons button {
-    background: #87CEEB;
+
+/* Animation rebond */
+@keyframes bounce {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-5px);
+    }
+}
+
+/* Boutons */
+.btn {
+    display: inline-block;
+    margin: 10px;
+    padding: 15px 20px;
+    font-size: 1.2em;
     color: white;
-    padding: 12px;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    width: 120px;
-    font-size: 1em;
-    transition: transform 0.3s ease, background 0.3s ease;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
 }
-.buttons button:hover {
-    background: #4682B4;
+
+.btn:hover {
     transform: scale(1.1);
+    background: linear-gradient(120deg, rgba(27, 27, 98, 0.903), rgba(48, 109, 133, 0.855),rgba(0, 0, 0, 0.558));
 }
+
+.whatsapp {
+    background: #25D366;
+}
+
+.call {
+    background: #007BFF;
+}
+.insta{
+    background: linear-gradient(rgba(0, 0, 0, 0.894),rgba(108, 19, 19, 0.861));
+}
+
+/* 📱 Responsivité */
 @media (max-width: 768px) {
-    h1 {
-        font-size: 2em;
+    header h1 {
+        font-size: 1.4em; /* Réduit la taille du titre */
+        word-spacing: 2px; /* Réduit l'espace entre les mots */
     }
-    .box {
-        width: 98%;
+
+    section {
+        width: 95%; /* Ajuste la largeur pour s'adapter aux écrans mobiles */
+        padding: 15px;
     }
-    .buttons button {
-        width: 100px;
-        font-size: 0.9em;
+
+    .skills-container {
+        flex-direction: column; /* Passe les compétences en colonne sur mobile */
     }
-    .container{
-        width: 90%;
+
+    .btn {
+        width: 80%; /* Agrandit les boutons pour une meilleure accessibilité */
+        display: block;
+        margin: 10px auto;
     }
-}
-html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
 }
